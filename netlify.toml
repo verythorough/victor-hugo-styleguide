@@ -1,2 +1,9 @@
+[build]
+  publish = "public"
+  command = "hugo"
+
+[context.production.environment]
+  HUGO_VERSION = "0.63.2"
+
 [context.deploy-preview]
   command = "npm run build-preview"
